@@ -1,0 +1,92 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uma bancada para praticar soma, multiplicação repetida, potência, fatorial e sequência de Fibonacci com validação.">
+    <title>
+      Bancada Aritmética
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js">
+    </script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        PROJETO
+        <span>
+          ·
+        </span>
+        Bancada
+      </a>
+      <span class="selo">
+        DEMONSTRAÇÃO LOCAL
+      </span>
+    </header>
+    <main>
+      <section class="abertura">
+        <p class="sobretitulo">
+          ESTUDO INTERATIVO · JAVASCRIPT
+        </p>
+        <h1>
+          Bancada Aritmética
+        </h1>
+        <p class="introducao">
+          Uma bancada para praticar soma, multiplicação repetida, potência, fatorial e sequência de Fibonacci com validação.
+        </p>
+      </section>
+      <section class="painel">
+        <form id="formulario">
+          <div class="grade">
+            <div class="campo">
+              <label for="operacao">
+                Operação
+              </label>
+              <select id="operacao">
+                <option value="somar">
+                  Soma
+                </option>
+                <option value="multiplicar">
+                  Multiplicação
+                </option>
+                <option value="potencia">
+                  Potência
+                </option>
+                <option value="fatorial">
+                  Fatorial do primeiro valor
+                </option>
+                <option value="fibonacci">
+                  Termo de Fibonacci (posição)
+                </option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="a">
+                Primeiro valor
+              </label>
+              <input id="a" type="number" value="6">
+            </div>
+            <div class="campo">
+              <label for="b">
+                Segundo valor / posição
+              </label>
+              <input id="b" type="number" value="4">
+            </div>
+          </div>
+          <div class="acoes">
+            <button>
+              Calcular
+            </button>
+          </div>
+        </form>
+        <div id="resultado" class="resultado" aria-live="polite">
+        </div>
+      </section>
+    </main>
+    <footer>
+      Projeto demonstrativo independente · dados fictícios · sem serviços externos
+    </footer>
+  </body>
+</html>
+
